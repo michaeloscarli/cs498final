@@ -72,10 +72,7 @@
 	<div class="container">
 		<h1>  Project Findings </h1>
 		<br>
-		<p>Following development, we began our project's test phase, inviting any willing souls to participate in our controlled study. We collected data from 14 different people. Ideally, we would like to have had more participants, but this proved difficult to accomplish given time constraints and having no compensation to offer.</p>
-		<br>
-		<p></p>
-		<br>
+		<p>Following development, we began our project's test phase, inviting any willing souls to participate in our controlled study. We collected data from 14 different people. Ideally, we would like to have had more participants, but this proved difficult to accomplish given time constraints and having no compensation to offer. Users were provided a survey sheet to fill out (as shown later) and were assisted through the study by one of our group members.</p>
 		<h3> In-place Rotation </h3>
 		<p>
 			During our jumping tests, subjects were asked to spin in place until they felt uncomfortable. They were then asked to quantify their experience from 1 (very uncomfortable) to 10 (very comfortable).
@@ -101,7 +98,7 @@
 			In our locomotion tests, subjects were asked to move around the test environment and quantify how comfortable their experience was.
 		</p>
 		<p>
-			Results were all very similar in this area, with control, teleporting, movement blur, and adding a nose each scoring 7.36, 7.04, 7.57, and 6.64 respectively. Subjects seemed moderately satisfied across the board with all locomotion methods, though the nose did receive slightly more negative feedback. We believe this to be in the inconsistencies between people's noses. Since we only had one nose model in our testing environment, it's very possible that the particular nose model we made did not match the size of a subject's nose. However, an interesting trend we noticed in our data was that subjects who never felt motion sickness tended to score movement blur lower than the the control. Several of them reported that they were bothered by the fact that they could not see all of the screen clearly, and that is what caused them discomfort.
+			Results were all very similar in this area, with control, teleporting, movement blur, and adding a nose each scoring 7.36, 7.04, 7.57, and 6.64 respectively. Subjects seemed moderately satisfied across the board with all locomotion methods, though the nose did receive slightly more negative feedback. We believe this to be in the inconsistencies between people's noses. Since we only had one nose model in our testing environment, it's very possible that the particular nose model we made did not match the size of every subject's nose. However, an interesting trend we noticed in our data was that subjects who never felt motion sickness tended to score movement blur lower than the the control. Several of them reported that they were bothered by the fact that they could not see all of the screen clearly, and that is what caused them discomfort.
 		</p>
 		<h3> Roller Coaster </h3>
 		<p>
@@ -109,15 +106,31 @@
 		</p>
 		<br>
 		<p>
-			Similar to our locomotion results, our results from the roller coaster tests proved to be very similar between the control and blur method. On average, subjects began feeling motion sick at 52.71 seconds for the control test, and 48.30 seconds for the motion blur test. Other than being very close to each other, these times also roughly lined up with the first "drop" in the ride showing that clearly more than some visual refinement will be necessary to make such a simulation comfortable. Both tests scored very similarly as well, with control scoring 5.69 and the motion blur scoring 5.538. We can conclude that more than toying with optical flow must be done if we wish to make such an experience comfortable.
+			Similar to our locomotion results, our results from the roller coaster tests proved to be very similar between the control and blur method. On average, subjects began feeling motion sick at 52.71 seconds for the control test, and 48.30 seconds for the motion blur test. Other than being very close to each other, these times also roughly lined up with the first "drop" in the ride showing that clearly more than some visual refinement will be necessary to make such a simulation comfortable. Both tests scored very similarly as well, with control scoring 5.69 and the motion blur scoring 5.538.
 		</p>
-
+		<h3> Participants Information </h3>
+		<p>As mentioned before, users were asked to fill out a survey as they were guided through the experiment by one of our group members. The survey collected some relevant background information, such as gender, age, weight, level of motion sensitivity, level of physical activity, and level of experience with video games and virtual reality.</p>
+		<br>
+		<img src="./screenshots/survey.png" alt="rc" style="width:896px;height:504px">		
+		<br><br>
+		<p>With only 14 participants, it is difficult to find much meaningful correlation. For example, we only had one female participant and most participants were of similarweight and age (college students and probably mostly Computer Science majors) . However, we did find something of interest to note with regards to the background of participants.</p>
+		<p>First is the level of physical activity among the participants: most rated themselves having low or medium level of physical activity, which corresponds to a 2-3 on our scale of 1 to 5. We graph participants' level of physical activity against their motion sickness ratings and find a strong correlation (0.808). Participants with more physical activity gave in general higher ratings to their experience with each of our techniques. It seems that perhaps the more active you are, the less prone you are to motion sickness. This claim, however, requires more participants and surveys to be certain.</p>
+		<br>
+		<img src="./screenshots/physical_chart.png" alt="rc" style="width:896px;height:504px">		
+		<br><br>
+		<p>Our second correlation that we find involves users' levels of experience with video games. Most of our users seemed to have a medium to a significant amount of exposure to video gaming, corresponding to a 3-5 on our scale of 1 to 5. We graph participants' level of experience with video games against their motion sickness ratings and find a decently strong correlation (0.614). People with more experience with video games gave higher ratings to their experience with each of our techniques. They are probably more familiar with experiencing a variety of game mechanics and movements and thus perhaps have a higher tolerance against motion sickness. Again, however, given the small number of participants, this claim cannot be made strongly without further testing.
+		</p>
+		<img src="./screenshots/video_games_chart.png" alt="hk" style="width:896px;height:504px">
+		<br>
 	</div>
 
 	<div class="container">
 		<h1>  Project Conclusions </h1>
 		<br>
-		<p></p>
+		<p>Overall, our experiment mostly proved small, if any, success in our techniques. The challenge is finding a technique and solution that works best for everyone, but for everyone to like a particular mechanic implemented a certain way is close to impossible. Everyone is built differently; everyone has different predilections and limits. So the best we can hope for is something that <i>most</i> people feel comfortable with. In our experiment, rotational blur proved the most success, followed by motion blur. Even then, however, people who had a higher tolerance for motion sickness disliked the motion blur while those with a lower tolerance voted for the motion blur. The nose also provided a similar polarizing result in that either it went unnoticed by participants or participants felt cross-eyed and annoyed.</p>
+		<p>It is obvious that further testing needs to be done. Future pursuits should look more into testing our techniques of rotational and movement blur as well as refining the nose (perhaps provide more variety of shapes, sizes, and color) and implementing a more novel teleportation mechanic. As for jumping, it is clear that blurring is not an ideal technique. Future ideas for solving the abrupt landing after jumping might need to involve haptic feedback (vibration for instance), which is a function currently not implemented in the Oculus Rift.</p>
+		<p>Ideally, without time constraints, we would have run a much larger and better controlled experiment. For example, we would separate groups so that one would ride the roller coaster first with the blur and then without the blur while another group would ride the roller coaster without the blur and then with the blur. Our experiment only does the the latter, which could explain the slight drop in time in our findings. We could also provide more environments to test in, perhaps something less extreme than a roller coaster. An environment with a simple car or boat ride might be more bearable. Our current project allows for more environments to be added in, separate from the ones already implemented.</p>
+		<p>Evidently, more must be done besides experimenting solely with optical flow if we wish to make such virtual reality experiences significantly more comfortable. One thing is for certain: solving motion sickness in virtual reality is a serious discussion and not an easy problem to address. It requires a great deal of time, experimentation, and failure and it is a major issue that bars the entrance of virtual reality as a mainstream consumer product.</p>
 	</div>
 
 </body>
