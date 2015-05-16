@@ -52,8 +52,15 @@
 		<p>We were interested in how feasible teleportation could be used as a means of player movement in virtual reality experiences. In a way, teleportation is almost like jumping. However, teleportation is instantaneous movement from one place to another. There is no optical flow perceived by the user and thus (it is our hope) perhaps no discomfort. In our implementation, the user simply points his head in the location he or she wishes to teleport to (up to a certain distance), maintaining the Best Practices Guide's recommendation that the user is provided a visual cue. In our case, we allow the user to point to where he or she intends to teleport.</p>
 		<br>
 		<h2> Test Environments </h2>
-		<br>
+		<img src="./screenshots/environments.png" alt="environ" style="width:896px;height:504px">		
+		<br><br>
 		<p>We design several test environments to simulate various VR situations which could induce discomfort in individuals. The first is Tuscany, in which all of our techniques are implemented and testable. The user has full control of movement and exploration. The second is a Roller Coaster in a city. The user simply sits in a wagon and is allowed to rotate his or her head. This is the more extreme environment and easily induces discomfort and even nausea for most people. We wanted to have an extreme environment to fully test our techniques. The third environment is Hong Kong and an open world like Tuscany. It is mainly a testing environment for us as developers rather than a testing environment for users, but users are free to enter the environment.</p>
+		<br>
+		<img src="./screenshots/tuscany.png" alt="tuscany" style="width:896px;height:504px">		
+		<br>
+		<img src="./screenshots/roller_coaster.png" alt="rc" style="width:896px;height:504px">		
+		<br>
+		<img src="./screenshots/hongkong.png" alt="hk" style="width:896px;height:504px">
 		<br>
 	</div>
 	<div class="container">
@@ -67,15 +74,24 @@
 		<br>
 		<p>Following development, we began our project's test phase, inviting any willing souls to participate in our controlled study. We collected data from 14 different people. Ideally, we would like to have had more participants, but this proved difficult to accomplish given time constraints and having no compensation to offer.</p>
 		<br>
+		<p></p>
+		<br>
 		<h3> In-place Rotation </h3>
 		<p>
 		During our in-place spinning tests, subjects lasted, on average, 9.126 seconds on the control test and 19.67 seconds with rotational blur on. That is a 10.57 second, or 115.8% increase in how long they were able to last until feeling motion sick. Additionally, when asked to quantify their experience from 1 (very uncomfortable) to 10 (very comfortable), spinning with rotational blur scored, on average, 1.42 points higher than the control test.
 		</p>
 		<br>
 		<p>
-		In regards to reversing optical flow, results showed it to be marginally worse than the control test. With an average time of 9.10 seconds until motion sickness, as opposed to the control's 9.126, there was almost no difference between the two. When asked to quantify their experience, optical flow scored almost an entire point lower than the control test, with a score of 5.214 as opposed to the control's 6.179. This lead us to believe that reversing optical flow had, if any at all, a negative effect on user experience.
+		In regards to reversing optical flow, results showed it to be marginally worse than the control test. With an average time of 9.10 seconds until motion sickness, as opposed to the control's 9.126 seconds, there was almost no difference between the two. When users were asked to quantify their experience, optical flow scored almost an entire point lower than the control test, with a score of 5.214 as opposed to the control's 6.179. This leads us to believe that reversing optical flow had, if any at all, a negative effect on user experience.
 		</p>
 		<h3> Jumping </h3>
+		<p>
+		During our jumping tests, subjects were asked to jump until they felt uncomfortable. They were then asked to quantify their experience from 1 (very uncomfortable) to 10 (very comfortable).
+		</p>
+		<br>
+		<p>
+		Results showed the jump blur technique to be worse than the control test. When users were asked to quantify their experience, the jump blur scored more than a point lower than the control test, with a score of 5.214 as opposed to the control's 6.5. This suggests to us that jump blurring is not very effective and that we should perhaps pursue another solution for creating a more comfortable jump mechanic.
+		</p>		
 		<h3> Locomotion </h3>
 		<h3> Roller Coaster </h3>
 
